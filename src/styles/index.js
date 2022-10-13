@@ -51,6 +51,7 @@ export const Input = styled.input`
 
   color: #da2535;
 `;
+
 export const Flex = styled.div`
   display: flex;
   flex-direction: ${(props) => props.direction || "column"};
@@ -91,13 +92,14 @@ export const Button = styled.button`
 export const Item = styled.li`
   padding: 13px 10px 13px 24px;
   width: 354px;
-  height: 50px;
+  min-height: 50px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  background: ${(props) => props.checked ? "#da2535" : "#FFFFFF"};
+  background: ${(props) => (props.checked ? "#da2535" : "#FFFFFF")};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   list-style: none;
@@ -106,8 +108,13 @@ export const Item = styled.li`
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: ${(props) => props.checked ? "#ffffff" : "#000000"};
-    text-decoration-line: ${(props) => props.checked ? "line-through" : ""};
+    color: ${(props) => (props.checked ? "#ffffff" : "#000000")};
+    text-decoration-line: ${(props) => (props.checked ? "line-through" : "")};
+  
+    width:80%;
+    overflow-wrap:break-word;
+    word-wrap:break-word;
+    word-break:break-word;
   }
   button{
     width: 24px;
@@ -125,6 +132,6 @@ export const Item = styled.li`
 
   i {
     font-size: 24px;
-    color: ${(props) => props.checked ? "#ffffff" : "#000000"};
+    color: ${(props) => (props.checked ? "#ffffff" : "#000000")};
   }
 `;
