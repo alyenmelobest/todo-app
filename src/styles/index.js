@@ -31,7 +31,7 @@ export const H1 = styled.h1`
   line-height: 72px;
 
   text-align: center;
-  color: #da2535;
+  color: #0CC718;
 `;
 
 export const Input = styled.input`
@@ -49,7 +49,7 @@ export const Input = styled.input`
 
   border: none;
 
-  color: #da2535;
+  color: #099412;
 `;
 
 export const Flex = styled.div`
@@ -72,8 +72,10 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
 
-  background: #da2535;
+  background: #099412;
   border-radius: 10px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   font-weight: 700;
   font-size: 16px;
@@ -99,7 +101,7 @@ export const Item = styled.li`
   justify-content: space-between;
   flex-wrap: wrap;
 
-  background: ${(props) => (props.checked ? "#da2535" : "#FFFFFF")};
+  background: ${(props) => (props.checked ? "#0CC718" : "#FFFFFF")};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   list-style: none;
@@ -108,7 +110,7 @@ export const Item = styled.li`
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: ${(props) => (props.checked ? "#ffffff" : "#000000")};
+    color: ${(props) => (props.checked ? "#ffffff" : "#099412")};
     text-decoration-line: ${(props) => (props.checked ? "line-through" : "")};
   
     width:80%;

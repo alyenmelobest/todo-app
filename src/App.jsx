@@ -6,7 +6,7 @@ function App() {
   const [listTask, setListTasks] = useState([]);
 
   const addTask = () => {
-    if (!task) return alert("Please, add a task to continue!");
+    if (!task) return alert('Please, add a task to continue!');
     const newTask = {
       id: Math.random(),
       task: task,
@@ -28,7 +28,7 @@ function App() {
     newList[index].checked = !checked;
     setListTasks([...newList]);
   };
-  
+
   return (
     <Container>
       <H1>TO-DO LIST</H1>
